@@ -1,0 +1,24 @@
+button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: aqua;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  color: var(--color-dark-blue);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button:hover {
+  color: white;
+  background-color: var(--color-dark-blue);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+

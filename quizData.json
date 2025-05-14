@@ -1,0 +1,130 @@
+{
+  "perceivable": [
+    {
+      "question": "What does 'perceivable' mean in web accessibility?",
+      "options": ["Content must be entertaining", "Content must be visible to admins", "Content must be perceivable by all users", "Content must be free"],
+      "answer": 2,
+      "explanation": "Perceivable means that users must be able to detect and understand content using at least one of their senses (e.g., sight, hearing). If something can’t be seen, heard, or otherwise sensed, it isn’t accessible."
+    },
+    {
+      "question": "Which action helps make content perceivable?",
+      "options": ["Use low contrast colors", "Replace text with images", "Provide alternative text for images", "Use Flash animations"],
+      "answer": 2,
+      "explanation": "Alt text ensures that users who can’t see images (e.g., blind users using screen readers) still get the information or purpose of the image. This makes content perceivable beyond just visuals."
+    },
+     {
+      "question": "Why are captions important in videos?",
+      "options": ["To improve video resolution", "To save storage space", "So deaf users can understand the content", "To boost Search Engine Optimization"],
+      "answer": 2,
+      "explanation":"Captions make audio content in videos accessible to users who are deaf or hard of hearing. Without captions, they miss important spoken information."
+    },
+    {
+      "question": "Which statement is true about color and accessibility?",
+      "options": ["Color alone should be used to convey information", "TColor contrast doesn’t matter", "Content should be understandable without color ", "Neon colors solve accessibility issues"],
+      "answer": 2,
+      "explanation":"Relying on color alone (e.g., red for “error”) excludes users with color blindness or visual impairments. Clear labels, shapes, or patterns should also be used."
+    },
+    {
+      "question": "What helps blind users understand web content?",
+      "options": ["Large headings", "Blocking voice assistants", "Screen reader-friendly content ", "Scrollable banners"],
+      "answer": 2,
+      "explanation":"Screen readers convert text and structural information into speech or Braille. Ensuring your site works with them helps blind users navigate and understand content."
+    }
+  ],
+  "operable": [
+    {
+      "question": "What does 'operable' mean in web accessibility?",
+      "options": ["Content must be editable by admins", "Content must work only with a mouse", "Users must be able to navigate and interact with the interface", "Content must be downloadable"],
+      "answer": 2,
+      "explanation":"Operable means that users can interact with all elements, like links and forms, using a variety of tools, not just a mouse. This includes keyboard, screen readers, and other assistive technologies."
+    },
+    {
+      "question": "Which of the following improves operability?",
+      "options": ["Auto-playing videos with sound", "No skip link on long pages", "Ensuring all functions are usable by keyboard", "Pop-ups triggered on mouse hover only"],
+      "answer": 2,
+      "explanation":"Keyboard operability is essential for users who cannot use a mouse. All interactive elements should be accessible using just the keyboard (e.g., via Tab, Enter, or arrow keys)."
+    },
+    {
+      "question": "Why should you avoid flashing content?",
+      "options": ["It looks outdated", "It drains battery", "It slows down the site", "It can cause seizures"],
+      "answer": 3,
+      "explanation":"Flashing content (especially over 3 flashes per second) can trigger seizures in users with photosensitive epilepsy."
+    },
+    {
+      "question": "What is a 'skip to content' link useful for?",
+      "options": ["Allowing keyboard users to bypass menus", "Jumping to social media", "Skipping videos", "Loading pages faster"],
+      "answer": 0,
+      "explanation":"A “skip to content” link lets keyboard users bypass repetitive navigation and jump straight to the main content."
+    },
+    {
+      "question": "Which design supports keyboard navigation?",
+      "options": ["Drag-and-drop only controls", "Click-to-open menus", "Hidden links", "Tab-friendly interactive elements"],
+      "answer": 3,
+      "explanation":"Making sure users can navigate using the Tab key is essential for those who can't use a mouse."
+    }
+  ],
+  "understandable": [
+     {
+      "question": "Which content is easier to understand for most users?",
+      "options": ["Text with simple words and short sentences", "Legal language and jargon", "All-uppercase text", "Very small text sizes"],
+      "answer": 0,
+      "explanation":""
+    },
+    {
+      "question": "What does 'understandable' mean in web accessibility?",
+      "options": ["The content must be funny", "Users must be able to understand the information and interface", "Only technical users can understand the content", "Fonts should always be decorative"],
+      "answer": 1,
+      "explanation":"“Understandable” means that both the content and how the interface behaves should be clear and predictable. For example, using plain language, consistent navigation, and form error messages."
+    },
+    {
+      "question": "Which practice supports understandability?",
+      "options": ["Using complex legal language", "Labeling form fields clearly", "Using random button labels like “Go!” or “???“", "Frequently changing the layout"],
+      "answer": 1,
+      "explanation":"Clear and descriptive form labels (like “Email address” or “Password”) help all users understand what is expected."
+    },
+    {
+      "question": "What helps users avoid input errors in forms?",
+      "options": ["Real-time validation with clear instructions", "Leaving fields unlabeled", "Using placeholders as labels", "Error messages after submission only"],
+      "answer": 0,
+      "explanation":"Immediate and clear feedback helps users understand and correct mistakes quickly."
+    },
+    {
+      "question": "Why should navigation be consistent across pages?",
+      "options": ["It looks more modern", "Users learn where things are and don’t get confused ", "It reduces server load", "It boosts SEO"],
+      "answer": 1,
+      "explanation":"Consistent layout and navigation help users predict where to find things, improving usability."
+    }
+  ],
+  "robust": [
+     {
+      "question": "What does 'robust' mean in web accessibility?",
+      "options": ["The website loads very quickly", "The content works on a wide range of devices and assistive technologies", "The site must look the same in every browser", "The site is protected from hackers"],
+      "answer": 1,
+      "explanation":"Robust means that the website is built using clean, valid code so it can be reliably interpreted by current and future technologies (like screen readers, browsers, etc.)."
+    },
+    {
+      "question": "Which code practice improves robustness?",
+      "options": ["Using invalid HTML tags", "Skipping alt attributes", "Following web standards and valid HTML", "Embedding text in images"],
+      "answer": 2,
+      "explanation":"Clean, valid HTML ensures that assistive technologies can reliably interpret and present content to users."
+    },
+    {
+      "question": "Why is using ARIA (Accessible Rich Internet Applications) roles helpful?",
+      "options": ["It improves visual design", "It makes animations smoother", " It increases file size", "It gives extra information to assistive technologies"],
+      "answer": 3,
+      "explanation":"ARIA roles describe the purpose of elements (like buttons or sliders) to assistive tech, improving accessibility when native elements aren't enough."
+    },
+    {
+      "question": "Which element is robust for a button?",
+      "options": ["A styled <div> that looks like a button", "A blinking text link", "A clickable image without description", "A proper <button> element"],
+      "answer": 2,
+      "explanation":"Using semantic HTML elements like <button> ensures compatibility with screen readers and other tools, making functionality clear and reliable."
+    },
+    {
+      "question": "What happens if a website uses outdated or broken HTML?",
+      "options": ["It loads faster", "It may not work correctly with assistive technologies", "It becomes more secure", "It improves visual design"],
+      "answer": 1,
+      "explanation":"Broken or outdated HTML can confuse screen readers and other tools, making the content inaccessible for users who rely on them."
+    }
+  ]
+}
