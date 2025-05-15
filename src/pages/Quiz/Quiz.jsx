@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
 import { Form } from "../../components/Form/Form";
 import { QuizCard } from "../../components/QuizCard/QuizCard";
@@ -44,9 +45,11 @@ const [backgroundColor, setBackgroundColor] = useState("var(--color-dark-blue");
         setBackgroundColor("var(--color-light-blue)");
     }
   };
-
+const navigate = useNavigate();
   const handleFinish = (score, total) => {
-    setResult({ score, total });
+    navigate("/result", {
+      state: { score, total },
+    })
   };
 
   console.log(backgroundColor);

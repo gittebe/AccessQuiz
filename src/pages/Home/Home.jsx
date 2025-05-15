@@ -14,7 +14,7 @@ export const Home = () => {
         <img src="/assets/accessibility-logo.png" alt="" className="home-logo"/>
       </div>
       <Link to="/quiz" className="link">
-        Start Quiz
+        Start
       </Link>
     </div>
   )

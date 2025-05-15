@@ -1,8 +1,9 @@
 import "./Result.css";
 
-export const Result = ({ score, total }) => (
+export const Result = ({ score, total, text }) => (
   <div className="result">
-    <h3>Results</h3>
+    <h2>Results</h2>
     <p>You have {score} questions  out of {total} correct.</p>
+    <p>{text}</p>
   </div>
 );

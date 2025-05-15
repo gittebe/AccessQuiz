@@ -40,7 +40,7 @@ export const QuizCard = ({ category, onFinish }) => {
     <div className="quiz-container">
       {questions.map((q, qIndex) => (
         <div key={qIndex} className="quiz-question">
-          <h3>{q.question}</h3>
+          <h2>{q.question}</h2>
           <ul>
             {q.options.map((option, idx) => {
               const isSelected = answers[qIndex] === idx;
@@ -50,21 +50,25 @@ export const QuizCard = ({ category, onFinish }) => {
                     onClick={() => handleAnswer(qIndex, idx)}
                     disabled={answers[qIndex] !== undefined}
                     className={`answer-button ${feedback[qIndex]
-                        ? idx === answers[qIndex]
-                          ? feedback[qIndex].correct
-                            ? "correct"
-                            : "incorrect"
-                          : ""
+                        ? questions[qIndex].answer === idx
+                          ? idx === answers[qIndex]
+                            ? "correct" 
+                            : "highlight-correct"
+                          : idx === answers[qIndex]
+                            ? "incorrect"
+                            : ""
                         : isSelected
                           ? "selected"
                           : ""
                       }`}
                   >
-                    {feedback[qIndex] && idx === answers[qIndex] ? (
-                      feedback[qIndex].correct ? `✅ ${option}` : `❌ ${option}`
-                    ) : (
-                      option
-                    )}
+                    {feedback[qIndex]
+                      ? questions[qIndex].answer === idx
+                        ? `✅ ${option}`
+                        : idx === answers[qIndex]
+                          ? `❌ ${option}`
+                          : option
+                      : option}
                   </button>
                 </li>
               );
@@ -82,7 +86,7 @@ export const QuizCard = ({ category, onFinish }) => {
 
       {Object.keys(answers).length === questions.length && (
         <button className="submit-button" onClick={handleSubmit}>
-          Quiz abschließen
+          Done
         </button>
       )}
     </div>

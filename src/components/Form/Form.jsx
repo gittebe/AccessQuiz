@@ -17,9 +17,12 @@ export const Form = ({ onSelectCategory }) => {
     <form onSubmit={handleSubmit}>
       <fieldset>
         <legend>Pick a quiz!</legend>
-        <div className="radio-box-group">
+        <div
+          className="radio-box-group">
           {["perceivable", "operable", "robust", "understandable"].map((category) => (
-            <div className="radio-box" key={category}>
+            <div
+              className="radio-box"
+              key={category}>
               <input
                 type="radio"
                 id={category}
@@ -27,7 +30,9 @@ export const Form = ({ onSelectCategory }) => {
                 value={category}
                 onChange={(e) => setSelectedCategory(e.target.value)}
               />
-              <label htmlFor={category}>{category}</label>
+              <label
+                htmlFor={category}
+              >{category}</label>
             </div>
           ))}
         </div>

@@ -64,7 +64,8 @@ legend {
   }
 
 .radio-box label:hover {
-  background-color: rgb(234, 232, 232);
+  background-color: var(--color-dark-blue);
+  color: white;
 }
 
 
