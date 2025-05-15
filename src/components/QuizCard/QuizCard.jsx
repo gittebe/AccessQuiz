@@ -50,16 +50,16 @@ export const QuizCard = ({ category, onFinish }) => {
                     onClick={() => handleAnswer(qIndex, idx)}
                     disabled={answers[qIndex] !== undefined}
                     className={`answer-button ${feedback[qIndex]
-                        ? questions[qIndex].answer === idx
-                          ? idx === answers[qIndex]
-                            ? "correct" 
-                            : "highlight-correct"
-                          : idx === answers[qIndex]
-                            ? "incorrect"
-                            : ""
-                        : isSelected
-                          ? "selected"
+                      ? questions[qIndex].answer === idx
+                        ? idx === answers[qIndex]
+                          ? "correct"
+                          : "highlight-correct"
+                        : idx === answers[qIndex]
+                          ? "incorrect"
                           : ""
+                      : isSelected
+                        ? "selected"
+                        : ""
                       }`}
                   >
                     {feedback[qIndex]
@@ -77,9 +77,11 @@ export const QuizCard = ({ category, onFinish }) => {
 
           {feedback[qIndex] && (
             <p className={feedback[qIndex].correct ? "correct" : "incorrect"}>
-              {feedback[qIndex].correct ? "Correct. " : "Incorrect. "}
+              {feedback[qIndex].correct ? "Correct. " : "Incorrect. "}<br/>
               {feedback[qIndex].explanation}
             </p>
+
+
           )}
         </div>
       ))}
