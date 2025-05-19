@@ -20,7 +20,7 @@
     },
     {
       "question": "Which statement is true about color and accessibility?",
-      "options": ["Color alone should be used to convey information", "TColor contrast doesn’t matter", "Content should be understandable without color ", "Neon colors solve accessibility issues"],
+      "options": ["Color alone should be used to convey information", "Color contrast doesn’t matter", "Content should be understandable without color ", "Neon colors solve accessibility issues"],
       "answer": 2,
       "explanation":"Relying on color alone (e.g., red for “error”) excludes users with color blindness or visual impairments. Clear labels, shapes, or patterns should also be used."
     },
@@ -117,7 +117,7 @@
     {
       "question": "Which element is robust for a button?",
       "options": ["A styled <div> that looks like a button", "A blinking text link", "A clickable image without description", "A proper <button> element"],
-      "answer": 2,
+      "answer": 3,
       "explanation":"Using semantic HTML elements like <button> ensures compatibility with screen readers and other tools, making functionality clear and reliable."
     },
     {

@@ -10,7 +10,7 @@ export const Quiz = () => {
   const [category, setCategory] = useState(null);
   const [result, setResult] = useState(null);
   const [headerText, setHeaderText] = useState("AccessQuiz")
-  const [paragraphText, setParagraphText] = useState("You can choose from four categories. The four topics are inline with the four WCAG 2.2 principles for web accessibility")
+  const [paragraphText, setParagraphText] = useState("You can choose from four categories, each corresponding to one of the four principles of the Web Content Accessibility Guidelines (WCAG): Perceivable, Operable, Understandable, and Robust. Each category contains a set of questions designed to test your knowledge and understanding of accessibility principles and best practices. Once you complete a quiz, you will receive a score that reflects your performance.")
 
 const [backgroundColor, setBackgroundColor] = useState("var(--color-dark-blue");
 
