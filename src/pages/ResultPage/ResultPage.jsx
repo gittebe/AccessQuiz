@@ -37,7 +37,7 @@ export const ResultPage = () => {
     <div className="result-wrapper">
       <Header header={headerText}  />
       <Result score={score} total={total} text={paragraphText}/>
-      <Link to="/quiz" className="link">Try again</Link>
+      <Link to="/quiz" className="link">Start over</Link>
     </div>
   )
 };
